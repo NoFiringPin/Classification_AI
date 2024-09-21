@@ -38,7 +38,7 @@ def classify_image(image_path):
     confidence = np.max(predictions)
     return labels[predicted_class[0]], confidence
 
-# Process all the images and call all the helper functions to process our images/data
+# Process all the images and call all the helper functions to process our images/data.
 if __name__ == "__main__":
     for file_name in os.listdir(script_dir):
         if file_name.lower().endswith(('.jpg','.jpeg','.png')):
